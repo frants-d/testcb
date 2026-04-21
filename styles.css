@@ -255,8 +255,8 @@ body {
 .hero-visual img {
     position: absolute;
     right: 0;
-    bottom: -22px;
-    height: 112%;
+    bottom: 0;
+    height: 99%;
     max-width: none;
     pointer-events: none;
     user-select: none;
@@ -761,7 +761,12 @@ a.link:hover,
     .form-grid,
     .footer-grid,
     .hero-grid {
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    }
+
+    .hero-visual {
+        display: none;
     }
 
     .brand-right {
@@ -818,6 +823,10 @@ a.link:hover,
 
     .hero-copy {
         padding: 24px;
+    }
+
+    .hero-visual {
+        display: none;
     }
 
     .news-search-row {
