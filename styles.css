@@ -254,13 +254,10 @@ body {
 
 .hero-visual img {
     position: absolute;
-    right: 0px;
-    bottom: 0px;
+    right: 0;
+    bottom: 0;
     height: 100%;
     max-width: none;
-    pointer-events: none;
-    user-select: none;
-    opacity: 0.9;
     object-fit: contain;
 }
 
