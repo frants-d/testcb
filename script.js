@@ -398,7 +398,7 @@ function homePage() {
         '<h2 class="section-title" style="margin-bottom:16px;">О портале</h2>',
         '<div class="body">Портал информационного взаимодействия поддерживает организации и сотрудников министерства, участвующих в бюджетном процессе. Обеспечивает удобный обмен данными и работу с финансово-экономическими инструментами.</div>',
         '</div>',
-        '<div class="hero-visual"><img src="owl.png" alt="Герб" style="width:100%; height:100%; object-fit:contain;"/></div>',
+        '<div class="hero-visual"><img src="owl.png" alt="Сова" style="width:100%; height:100%; object-fit:cover;"/></div>',
         '</div>',
         '</section>',
         '<section class="card soft">',
