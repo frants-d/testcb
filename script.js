@@ -96,7 +96,7 @@ const workingTools = [
     { title: 'УВБА', description: 'Учет и ведение бюджетных ассигнований', accent: '#1E63C6' },
     { title: 'Паспорта работ', description: 'Формирование и ведение паспортов выполнения работ', accent: '#00A67D' },
     { title: 'Реестр', description: 'Сведения из ЕГРЮЛ участников бюджетного процесса', accent: '#1E63C6' },
-    { title: 'Форумы', description: 'Форумы по экономическим вопросам', accent: '#D45500' }
+    { title: 'Форумы', description: 'Форумы по экономическим вопросам', accent: '#475569' }
 ];
 
 const testTools = [
@@ -398,7 +398,9 @@ function homePage() {
         '<h2 class="section-title" style="margin-bottom:16px;">О портале</h2>',
         '<div class="body">Портал информационного взаимодействия поддерживает организации и сотрудников министерства, участвующих в бюджетном процессе. Обеспечивает удобный обмен данными и работу с финансово-экономическими инструментами.</div>',
         '</div>',
-        '<div class="hero-visual"><img src="owl.png" alt="Сова" style="width:100%; height:100%; object-fit:cover;"/></div>',
+        '<div class="hero-visual">',
+        '<img src="owl.jpg" alt="Иллюстрация" />',
+        '</div>',
         '</div>',
         '</section>',
         '<section class="card soft">',
@@ -746,8 +748,8 @@ function runTests() {
         {
             name: 'toolCard использует новую иконку для Форумов',
             run: function () {
-                const html = toolCard({ title: 'Форумы', description: 'Форумы по экономическим вопросам', accent: '#D45500', isTest: false });
-                return html.includes('forumAccent') && html.includes('fill="#D45500"');
+                const html = toolCard({ title: 'Форумы', description: 'Форумы по экономическим вопросам', accent: '#475569', isTest: false });
+                return html.includes('forumAccent') && html.includes('fill="#475569"');
             }
         },
         {
@@ -803,6 +805,13 @@ function runTests() {
             run: function () {
                 const html = homePage();
                 return html.includes('Подробнее') && html.includes('data-page="about"');
+            }
+        },
+        {
+            name: 'homePage содержит иллюстрацию owl в hero-блоке',
+            run: function () {
+                const html = homePage();
+                return html.includes('src="owl.png"') && html.includes('class="hero-visual"');
             }
         },
         {
