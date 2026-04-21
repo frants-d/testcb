@@ -813,8 +813,17 @@ a.link:hover,
         padding: 20px;
     }
 
+    .hero-grid {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
     .hero-copy {
         padding: 24px;
+    }
+
+    .hero-visual {
+        display: none;
     }
 
     .news-search-row {
